@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DU Blog Page</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <ul>
+                <li>
+                    <img src="https://cf.shopee.co.id/file/8421267e9faeddb378d815ea89a183da" alt="">
+                </li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="header">
+            <h1>ADD MY PROJECT</h1>
+            <form onsubmit="addBlog(event)">
+                <div>
+                    <label for="input-name">Project Name</label>
+                    <input type="text" class="name" id="input-name" />
+                </div>
+                <div class="date"> <ul>
+                    <li class="in">
+                        <label for="input-date">Start Date</label>
+                        <input type="date" class="indate" id="input-date">
+                    </li>
+                    <li class="out">
+                        <label for="input-date">End Date</label>
+                        <input type="date" class="outdate" id="input-date">
+                    </li>
+                    </ul>
+                </div>
+                <div>
+                    <label for="input-describ">Description</label>
+                    <textarea  id="input-describ" cols="30" rows="10"></textarea>
+                </div>
+                <label for="">Technology:</label>
+                <div>
+                    <ul class="up">
+                        <li>
+                            <input type="checkbox" class="check"
+                            id="Input-node"> Node Js 
+                        </li>
+                        <li>
+                            <input type="checkbox" class="check" id="input-next"> Next Js
+                        </li>
+                    </ul>
+                    <ul class="bottom">
+                        <li>
+                            <input type="checkbox"  id="input-React" class="check"> React Js
+                        </li>
+                        <li>
+                            <input type="checkbox"  id="input-Type" class="check"> TypeScript
+                        </li>
+                    </ul>
+                </div>
+                <label for="input-img">
+                        Upload Image
+                </label>
+                <div class="input">
+                    <div class="file">
+                        <input type="file" id="input-image">
+                        Choose
+                        
+                    </div>
+                    <div class="clip">
+                        <i class="fa-solid fa-paperclip"></i>
+                        <input type="file" name="" id="">
+                    </div>
+                </div >
+
+                    <div>
+                    <button>submit</button>
+                    </div>
+            </form>
+
+            <p id="hmmm">joko</p>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
